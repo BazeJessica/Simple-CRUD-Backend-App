@@ -20,7 +20,7 @@ app.get('/',(req,res)=>{
 });
 
 
-mongoose.connect('mongodb+srv://ennorbaze202:YhjK5xDh9HENuvb8@cluster0.ulq3aq4.mongodb.net/Node-API?retryWrites=true&w=majority&appName=Cluster0',{
+mongoose.connect(dbURI,{
 }).then(()=>{
     console.log("Connected to database!"); 
     app.listen(5000,()=>{
